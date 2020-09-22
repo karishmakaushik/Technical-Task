@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Technical Task
+	</title>
+	<style>
+      .list {
+        width: 180px;
+        height: 40px;
+        border: 2px solid #999;
+        font-size: 18px;
+        color: #1c87c9;
+        background-color: #eee;
+        border-radius: 5px;
+        box-shadow: 5px 5px #ccc;
+      }
+    </style>
+</head>
+<body style="background-color:powderblue;">
+	<h1 align="center" > Technical Task Solution ~ It-InCloud </h1>
+	<form align="center">
+		<select align="center" name="list" id="list" class="list">
+	    	<option value='none' selected="selected">Choose a Mobile</option>
+	    	<option align="center" value="https://www.amazon.in/Test-Exclusive-667/dp/B07HGH8D2R/ref=sr_1_1_sspa?dchild=1&keywords=M21&qid=1600756995&s=electronics&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyV1FZTEwwVlhVQVhNJmVuY3J5cHRlZElkPUEwNjk4OTExMkk2NlpXQU9WQlFZSyZlbmNyeXB0ZWRBZElkPUEwNTc3OTg1S0VBNEczT1pESDdUJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">Samsung Galaxy M21</option>
+	    	<option value="https://www.amazon.in/Samsung-Galaxy-Storage-Additional-Exchange/dp/B07X9YMW7S/ref=sr_1_1_sspa?dchild=1&keywords=A51&qid=1600757037&s=electronics&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyMzhHVUVRNVcyQThFJmVuY3J5cHRlZElkPUEwMDMzODg2MU1GTFJDMk5DVklMTiZlbmNyeXB0ZWRBZElkPUEwNjI4ODEyMkNCNTIzU1Y1SE45ViZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=">Samsung Galaxy A51
+	    	</option>
+	    	<option  value="https://www.amazon.in/Samsung-Galaxy-Celestial-Black-Storage/dp/B085J1CPCW/ref=sr_1_1_sspa?crid=2ZN2OYPDAX1Y2&dchild=1&keywords=samsung+m51&qid=1600757073&s=electronics&sprefix=Samsung+%2Celectronics%2C496&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyWUFUSTVYRVJNWFpYJmVuY3J5cHRlZElkPUEwNjM3NzE5M0VSV0k4SFBWTURFOSZlbmNyeXB0ZWRBZElkPUEwNTg5MDk4RDRTMDJINFZFWFAzJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">Samsung Galaxy M51
+	    	</option>
+		</select>
+	</form>
+
+	<script type="text/javascript">
+    var urlMenu = document.getElementById('list');
+    urlMenu.onchange = function()
+    {
+    	var userOption = this.options[this.selectedIndex];
+
+    	if(userOption.value != "none")
+    	{
+    		window.open(userOption.value,"","");
+    	}
+
+    }
+	</script>
+</body>
+</html>
